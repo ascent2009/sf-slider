@@ -16,18 +16,29 @@
         <div class="completed-container">
             <div class="project-list-container">
                 <ul class="project-list">
-                    <li class="project-list__item admiral"><a href="#">Rostov-on-Don, Admiral</a></li>
-                    <li class="project-list__item"><a href="#">Sochi Thieves</a></li>
-                    <li class="project-list__item"><a href="#">Rostov-on-Don Patriotic</a></li>
+                    <li><a onclick="currentSlide(1)" class="project-list__item" href="#">Rostov-on-Don,
+                            Admiral</a></li>
+                    <li><a onclick="currentSlide(2)" class="project-list__item" href="#">Sochi Thieves</a></li>
+                    <li><a onclick="currentSlide(3)" class="project-list__item" href="#">Rostov-on-Don Patriotic</a>
+                    </li>
                 </ul>
                 <div class="completed-property">
+                </div>
+                <div class="completed-property-wrap">
+                    <h2 class="completed-subtitle">Completed projects</h2>
+                    <p class="project-review">Only a small part of the work performed by our company is
+                        presented on
+                        the site. For 14 years
+                        on in the construction
+                        market we have made happy more than 1000 families</p>
+                    <div class="arrow-circle-wrap">
+                        <button onclick="plusSlide()" class="arrow-circle"></button>
+                        <button onclick="minusSlide()" class="arrow-circle second"></button>
+                    </div>
+                </div>
+
+                <div class="completed__image-item block">
                     <div class="completed-property-wrap">
-                        <h2 class="completed-subtitle">Completed projects</h2>
-                        <p class="project-review">Only a small part of the work performed by our company is
-                            presented on
-                            the site. For 14 years
-                            on in the construction
-                            market we have made happy more than 1000 families</p>
                         <ul class="property-list">
                             <li class="property-list__item">
                                 <h3 class="item-subtitle">City:</h3>
@@ -46,29 +57,74 @@
                                 <p class="item-text">Upon request</p>
                             </li>
                         </ul>
-                        <div class="arrows">
-                            <a class="arrow" href="#"><img src="./img/vector-left.svg" alt="Предыдущий кадр"></a>
-                            <div class="dot">
-                                <a class="dot-item" href="#"><img src="./img/dot-active.svg" alt="Активный кадр"></a>
-                                <a class="dot-item" href="#"><img src="./img/dot-inactive.svg"
-                                        alt="Неактивный кадр"></a>
-                                <a class="dot-item" href="#"><img src="./img/dot-inactive.svg"
-                                        alt="Неактивный кадр"></a>
-                            </div>
-                            <a class="arrow" href="#"><img src="./img/vector-right.svg" alt="Следующий кадр"></a>
-                        </div>
                     </div>
-                    <div class="completed-image">
-                        <div class="arrow-circle-wrap">
-                            <button class="arrow-circle"></button>
-                            <button class="arrow-circle second"></button>
-                        </div>
+                    <div class="block">
+                        <img onclick="currentSlide(2)" src="./img/image 2.1.jpg" alt="Rostov-on-Don Admiral">
                     </div>
+                </div>
+                <div class="completed__image-item">
+                    <div class="completed-property-wrap block">
+                        <ul class="property-list">
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">City:</h3>
+                                <p class="item-text">Sochi<br>Thieves</p>
+                            </li>
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">apartment area:</h3>
+                                <p class="item-text">105 m2</p>
+                            </li>
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">Repair time:</h3>
+                                <p class="item-text">4 months</p>
+                            </li>
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">Repair Cost:</h3>
+                                <p class="item-text">Upon request</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-mobile">
+                        <img onclick="currentSlide(3)" src="./img/image 2.jpg" alt="Sochi Thieves">
+                    </div>
+                </div>
+                <div class="completed__image-item">
+                    <div class="completed-property-wrap block">
+                        <ul class="property-list">
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">City:</h3>
+                                <p class="item-text">Rostov-on-Don<br>Patriotic</p>
+                            </li>
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">apartment area:</h3>
+                                <p class="item-text">93 m2</p>
+                            </li>
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">Repair time:</h3>
+                                <p class="item-text">3 months</p>
+                            </li>
+                            <li class="property-list__item">
+                                <h3 class="item-subtitle">Repair Cost:</h3>
+                                <p class="item-text">Upon request</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block">
+                        <img onclick="plusSlide()" src="./img/image 3.jpg" alt="Rostov-on-Don Patriotic">
+                    </div>
+                </div>
+                <div class="arrows">
+                    <a class="arrow" onclick="minusSlide()"><img src="./img/vector-left.svg" alt="Предыдущий кадр"></a>
+                    <div class="dot">
+                        <span class="dot-item" onclick="currentSlide(1)"><img src="./Img/Rectangle 7.4.svg"></span>
+                        <span class="dot-item" onclick="currentSlide(2)"><img src="./Img/Rectangle 7.4.svg"></span>
+                        <span class="dot-item" onclick="currentSlide(3)"><img src="./Img/Rectangle 7.4.svg"></span>
+                    </div>
+                    <a class="arrow" onclick="plusSlide()"><img src="./img/vector-right.svg" alt="Следующий кадр"></a>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-
 
     <script src="slider.js"></script>
 </body>
